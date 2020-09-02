@@ -1,11 +1,6 @@
 Code for Jamstack Denver meetup
 
 ```
-yarn create redwood-app ./redwood-denver
-```
-
-```
-cd redwood-denver
 yarn rw dev
 ```
 
