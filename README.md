@@ -5,6 +5,8 @@
 ### Run locally
 
 ```bash
+git clone https://github.com/ajcwebdev/rw-denver.git
+cd rw-denver
 yarn install
 yarn rw dev
 ```
