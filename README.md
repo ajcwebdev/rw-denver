@@ -93,6 +93,8 @@ export default BlogLayout
 ### Wrap HomePage content with BlogLayout
 
 ```javascript
+// web/src/pages/HomePage/HomePage.js
+
 import BlogLayout from 'src/layouts/BlogLayout'
 
 const HomePage = () => {
@@ -111,6 +113,8 @@ export default HomePage
 ### Wrap AboutPage content with BlogLayout
 
 ```javascript
+// web/src/pages/AboutPage/AboutPage.js
+
 import BlogLayout from 'src/layouts/BlogLayout'
 
 const AboutPage = () => {
@@ -192,6 +196,8 @@ export const Success = ({ posts }) => {
 ### Import BlogPostsCell into HomePage
 
 ```javascript
+// web/src/pages/HomePage/HomePage.js
+
 import BlogLayout from 'src/layouts/BlogLayout'
 import BlogPostsCell from 'src/components/BlogPostsCell'
 
@@ -212,6 +218,8 @@ export default HomePage
 ### Update QUERY
 
 ```javascript
+// web/src/components/BlogPostsCell/BlogPostsCell.js
+
 export const QUERY = gql`
   query BlogPostsQuery {
     posts {
@@ -227,6 +235,8 @@ export const QUERY = gql`
 ### Update Success
 
 ```javascript
+// web/src/components/BlogPostsCell/BlogPostsCell.js
+
 export const Success = ({ posts }) => {
   return posts.map(post => (
     <article key={post.id}>
